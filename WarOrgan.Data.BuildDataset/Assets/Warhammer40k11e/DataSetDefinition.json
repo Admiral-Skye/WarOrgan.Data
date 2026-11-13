@@ -34,18 +34,50 @@
   "CoreAbilities":[
     {
       "Regex": "^Deep Strike$",
-      "Description": "Each time this unit makes an ingress move (20.04), if every model in this unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from all enemy units, even if that is within your opponent’s deployment zone."
+      "Description": "Each time this unit makes an ingress move (20.04), if every model in this unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from all enemy units, even if that is within your opponent's deployment zone."
     },
     {
       "Regex": "^DEADLY DEMISE$",
       "Description": "This ability always takes the form Deadly Demise X.\n\nEach time a model with this ability is destroyed, after the units embarked within it (if any) have made their emergency disembark moves, roll one D6. On a 6, that model suffers a deadly demise; each unit within 6\" of that model suffers a number of mortal wounds denoted by X (if this is a random number, roll separately for each unit within 6\")."
+    },
+    {
+      "Regex": "^FEEL NO PAIN$",
+      "Description": "This ability always takes the form Feel No Pain X+. Each time a model with this ability would lose a wound, roll one D6: on an X+, that wound is not lost."
+    },
+    {
+      "Regex": "^FIGHTS FIRST$",
+      "Description": "While every model in a unit has this ability, that unit is a Fights First unit.\n\n See the Resolve Fights First Combats step in the Fight phase (12.04)."
+    },
+    {
+      "Regex": "^FIRING DECK$",
+      "Description": "This ability always takes the form Firing Deck X. In your Shooting phase, each time this TRANSPORT is selected to shoot, if one or more units are embarked within it, resolve the following sequence:\n\n1. Select up to X models embarked within this TRANSPORT (excluding models whose units have already been selected to shoot this phase).\n2. For each selected model, select one of its ranged weapons (excluding [ONE SHOT] weapons).\n3. Until this TRANSPORT has resolved all of its attacks, it has all of those selected weapons in addition to its other weapons.\n4. Until the end of the turn, units embarked within this TRANSPORT are not eligible to shoot."
+    },
+    {
+      "Regex": "^HOVER$",
+      "Description": "Each time this unit takes to the skies (21.03), do not subtract 2\" from the maximum distance."
+    },
+    {
+      "Regex": "^INFILTRATORS$",
+      "Description": "During deployment, if every model in a unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from your opponent's deployment zone and all enemy units."
+    },
+    {
+      "Regex": "^LEADER$",
+      "Description": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.\n\nUnless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it."
+    },
+    {
+      "Regex": "^SUPPORT$",
+      "Description": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.\n\nUnless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it."
+    },
+    {
+      "Regex": "^LONE OPERATIVE$",
+      "Description": "Unless part of an attached unit, this unit is not visible to enemy models unless they are within 12\" of this unit, and it cannot be targeted by [INDIRECT FIRE] weapons unless the attacking model is within 12\" of this unit.\n\nIf this ability takes the form Lone Operative X\", unless part of an attached unit, this unit is not visible to enemy models unless they are within X\" of this unit, and it cannot be targeted by [INDIRECT FIRE] weapons unless the attacking model is within X\" of this unit."
+    },
+    {
+      "Regex": "^SCOUTS$",
+      "Description": "This ability always takes the form Scouts X\". In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following:\n\n• If that unit is in strategic reserves, you can set up that unit anywhere that is wholly within your deployment zone.\n• If that unit is wholly within your deployment zone, it can make a scout move (see below).\n• If that unit is embarked within a DEDICATED TRANSPORT that is wholly within your deployment zone, and if every model embarked within that DEDICATED TRANSPORT has the Scouts ability, that DEDICATED TRANSPORT can make a scout move."
     }
   ],
   "WeaponAbilities":[
-    {
-      "Regex": "^KEY$",
-      "Description": "Description"
-    },
     {
       "Regex": "^ANTI$",
       "Description": "This ability always takes the form [ANTI-X Y+]. Each time an attack is made with an [ANTI] weapon, if the target unit has the keyword denoted by X, an unmodified wound roll of Y+ is a critical wound."
@@ -64,7 +96,7 @@
     },
     {
       "Regex": "^CLOSE-QUARTERS$",
-      "Description": "Units containing one or more models with a [CLOSE-QUARTERS] weapon can shoot using close-quarters shooting (10.06)."
+      "Description": "Units containing one or more models with a [CLOSE-QUARTERS] weapon can shoot using close-quarters shooting (10.06).\n\nWhen using another shooting type, for each model in that unit (excluding MONSTER/VEHICLE models), you can only select one of the following to make attacks with:\n\n• One or more of its [CLOSE-QUARTERS] weapons.\n• One or more of its other ranged weapons."
     },
     {
       "Regex": "^DEVASTATING WOUNDS$",
@@ -75,16 +107,64 @@
       "Description": "Each time a unit containing one or more models with an [EXTRA ATTACKS] weapon fights, those models will make attacks with those weapons in addition to any others. In the Select Weapons step (04.01), for each of those models, you must select:\n\n• All of that model's [EXTRA ATTACKS] weapons.\n• One of that model's other melee weapons, if possible"
     },
     {
+      "Regex": "^HAZARDOUS$",
+      "Description": "Each time a unit is selected to shoot or selected to fight, after that unit has resolved all of its attacks, make a number of hazard rolls (06.03) for that unit equal to the number of [HAZARDOUS] weapons you selected in the Select Weapons step."
+    },
+    {
+      "Regex": "^HEAVY$",
+      "Description": "In your Shooting phase, each time an attack is made with a [HEAVY] weapon, add 1 to the hit roll if all of the following apply to the attacking unit:\n\n• That unit is unengaged.\n• That unit was not set up on the battlefield this turn.\n• No model in that unit has moved more than 3\" this turn."
+    },
+    {
+      "Regex": "^HUNTER$",
+      "Description": "This ability always takes the form [HUNTER-X]. Weapons with this keyword"
+    },
+    {
+      "Regex": "^IGNORES COVER$",
+      "Description": "Each time an attack is made with an [IGNORES COVER] weapon, the target cannot have the benefit of cover against that attack (13.08), including from rules that give a model or unit the benefit of cover (e.g. Stealth)."
+    },
+    {
+      "Regex": "^INDIRECT FIRE$",
+      "Description": "Units containing one or more models with an [INDIRECT FIRE] weapon can shoot using indirect shooting (10.07)."
+    },
+    {
+      "Regex": "^LANCE$",
+      "Description": "Each time an attack is made with a [LANCE] weapon, if the attacking model's unit made a charge move this turn, add 1 to the wound roll."
+    },
+    {
+      "Regex": "^LETHAL HITS$",
+      "Description": "Each time an attack made with a [LETHAL HITS] weapon results in a critical hit, you can choose for that attack to automatically wound the target."
+    },
+    {
+      "Regex": "^MELTA$",
+      "Description": "This ability always takes the form [MELTA X]. Each time a model makes an attack with a [MELTA] weapon, if the target unit was within half range of that weapon in the Select Targets step, until the attacking unit's attacks have been resolved, add X to that weapon's D characteristic"
+    },
+    {
+      "Regex": "^ONE SHOT$",
+      "Description": "Each weapon with this ability can only be selected to make attacks with once per battle.\n\nIf a destroyed model is returned to a unit, all of its [ONE SHOT] weapons that have already been selected to make attacks with during the battle cannot be selected to make attacks with again.\n\n \n\nIf a new unit is added to an army, all [ONE SHOT] weapons in that unit can be selected to make attacks with once per battle."
+    },
+    {
       "Regex": "^PISTOL$",
-      "Description": "[PISTOL] and [CLOSE-QUARTERS] are identical for all rules purposes.\n\nUnits containing one or more models with a [CLOSE-QUARTERS] weapon can shoot using close-quarters shooting (10.06)."
+      "Description": "[PISTOL] and [CLOSE-QUARTERS] are identical for all rules purposes.\n\nUnits containing one or more models with a [CLOSE-QUARTERS] weapon can shoot using close-quarters shooting (10.06).\n\nWhen using another shooting type, for each model in that unit (excluding MONSTER/VEHICLE models), you can only select one of the following to make attacks with:\n\n• One or more of its [CLOSE-QUARTERS] weapons.\n• One or more of its other ranged weapons."
+    },
+    {
+      "Regex": "^PRECISION$",
+      "Description": "While resolving attacks made with one or more [PRECISION] weapons, at the start of the Allocation Order step (05.03), if the target unit contains one or more CHARACTER models visible to one or more of the attacking models, the active player can select one allocation group that contains one of those visible CHARACTER models. If they do, until those attacks are resolved, or until that CHARACTER group is destroyed (whichever happens first), that CHARACTER group is the current allocation group."
+    },
+    {
+      "Regex": "^PSYCHIC$",
+      "Description": "Each time an attack is made with a [PSYCHIC] weapon, you can ignore any or all modifiers to that attack's BS or WS characteristic and any or all modifiers to the hit roll. Attacks made with [PSYCHIC] weapons are known as psychic attacks (this can be important for the triggering of other rules)."
+    },
+    {
+      "Regex": "^RAPID FIRE$",
+      "Description": "This ability always takes the form [RAPID FIRE X]. Each time you gather attack dice for a [RAPID FIRE] weapon, add X additional attack dice if the target unit was within half range of that weapon in the Select Targets step."
     },
     {
       "Regex": "^TWIN-LINKED$",
       "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
     },
     {
-      "Regex": "^INDIRECT FIRE$",
-      "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
+      "Regex": "^KEY$",
+      "Description": "DESCRIPTION"
     }
   ]
 }
