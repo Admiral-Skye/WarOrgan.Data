@@ -1,0 +1,379 @@
+{
+  "Name": "Tau Empire",
+  "Units": [
+    {
+      "Id": "BREACHER TEAM",
+      "DisplayName": "Breacher Team",
+      "FactionKeywords": [
+        "T'AU EMPIRE"
+      ],
+      "UnitComposition": {
+        "ModelCompositions": [
+
+          {
+            "ModelName": "Breacher Fire Warrior Shas'ui",
+            "Limit": {
+              "Min": 1,
+              "Max": 1
+            },
+            "StatlineRef": "Breacher",
+            "Wargear": [
+              {
+                "Models": 1,
+                "InitialWargear": [
+                  "Pulse Blaster",
+                  "Pulse pistol",
+                  "Close Combat Weapon",
+                  "DS8 Support Turret"
+                ],
+                "Options": [
+                  {
+                    "Max": 2,
+                    "Options": [
+                      {
+                        "Items": [
+                          "Gun Drone"
+                        ]
+                      },
+                      {
+                        "Items": [
+                          "Marker Drone"
+                        ]
+                      },
+                      {
+                        "Items": [
+                          "Shield Drone"
+                        ]
+                      },
+                      {
+                        "Items": [
+                          "Guardian Drone"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Max": 2,
+                    "Options": [
+                      {
+                        "Items": [
+                          "Gun Drone"
+                        ]
+                      },
+                      {
+                        "Items": [
+                          "Marker Drone"
+                        ]
+                      },
+                      {
+                        "Items": [
+                          "Shield Drone"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "ModelName": "Breacher Fire Warrior",
+            "Limit": {
+              "Min": 9,
+              "Max": 9
+            },
+            "StatlineRef": "Breacher",
+            "Wargear": [
+              {
+                "Models": 9,
+                "InitialWargear": [
+                  "Pulse Blaster",
+                  "Pulse pistol",
+                  "Close Combat Weapon"
+                ]
+              }
+            ]
+          }
+        ],
+        "WargearDefinitions":[
+          {
+            "Key": "Gun Drone",
+            "DisplayName": "Gun Drone",
+            "Cost": 0,
+            "GrantsWeapons": [
+              "Twin Pulse Carbine"
+            ]
+          },
+          {
+            "Key": "Guardian Drone",
+            "DisplayName": "Guardian Drone",
+            "Cost": 0,
+            "GrantsAbilities": [
+              "Guardian Drone"
+            ]
+          },
+          {
+            "Key": "Marker Drone",
+            "DisplayName": "Marker Drone",
+            "Cost": 0,
+            "GrantsAbilities": [
+              "Marker Drone"
+            ]
+          },
+          {
+            "Key": "Shield Drone",
+            "DisplayName": "Shield Drone",
+            "Cost": 0,
+            "GrantsAbilities": [
+              "Shield Drone"
+            ],
+            "StatAdjustments": [
+              {
+                "TargetStatId": "W",
+                "Type": "Add",
+                "Scope": "Model",
+                "Value": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "Points": [
+        {
+          "ModelCount": 10,
+          "Cost": 80
+        }
+      ],
+      "CoreAbilities": [],
+      "Keywords": [
+        "INFANTRY",
+        "BATTLELINE",
+        "GRENADES",
+        "MARKERLIGHT",
+        "FIRE WARRIOR",
+        "BREACHER TEAM"
+      ],
+      "UnitAbilities": [
+        {
+          "Title": "Breach and Clear",
+          "Text": "Each time a model in this unit makes a ranged attack that targets an enemy unit within range of an objective marker, you can re-roll the Wound roll."
+        },
+        {
+          "Title": "DS8 Support Turret",
+          "Text": "In your Movement phase, if this unit Remains Stationary, until the start of your next turn, its Shas'ui model is equipped with the support turret weapon."
+        },
+        {
+          "Title": "Guardian Drone",
+          "Text": "Each time a model makes a ranged attack that targets the bearer's unit, subtract 1 from the Wound roll."
+        },
+        {
+          "Title": "Marker Drone",
+          "Text": "The bearer's unit has the MARKERLIGHT keyword and can act as an Observer unit for another unit even if it Advanced this turn."
+        },
+        {
+          "Title": "Shield Drone",
+          "Text": "Add 1 to the bearer's WOUNDS characteristic."
+        }
+      ],
+      "StatLines": [
+        {
+          "StatName": "Breacher",
+          "Stats": [
+            {
+              "Id": "M",
+              "Value": "6"
+            },
+            {
+              "Id": "T",
+              "Value": "3"
+            },
+            {
+              "Id": "Sv",
+              "Value": "4+"
+            },
+            {
+              "Id": "W",
+              "Value": "1"
+            },
+            {
+              "Id": "LD",
+              "Value": "7+"
+            },
+            {
+              "Id": "OC",
+              "Value": "2"
+            }
+          ]
+        }
+      ],
+      "Weapons": [
+        {
+          "Id": "Ranged",
+          "Weapons": [
+            {
+              "Id": "Pulse Blaster",
+              "Stats": [
+                {
+                  "Id": "RANGE",
+                  "Value": "10"
+                },
+                {
+                  "Id": "A",
+                  "Value": "2"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "3+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "6"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "-1"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords":"ASSAULT, EXTRA ATTACKS"
+            },
+            {
+              "Id": "Pulse pistol",
+              "Stats": [
+                {
+                  "Id": "RANGE",
+                  "Value": "12"
+                },
+                {
+                  "Id": "A",
+                  "Value": "1"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "4+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords":"PISTOL"
+            },
+            {
+              "Id": "DS8 Support Turret",
+              "Stats": [
+                {
+                  "Id": "RANGE",
+                  "Value": "30"
+                },
+                {
+                  "Id": "A",
+                  "Value": "2"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "5+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords":"INDIRECT FIRE, TWIN-LINKED"
+            },
+            {
+              "Id": "Twin Pulse Carbine",
+              "DisplayName": "Twin Pulse Carbine",
+              "Stats": [
+                {
+                  "Id": "RANGE",
+                  "Value": "20"
+                },
+                {
+                  "Id": "A",
+                  "Value": "2"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "5+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords":"ASSAULT, TWIN-LINKED"
+            }
+          ]
+        },
+        {
+          "Id": "Melee",
+          "Weapons": [
+            {
+              "Id": "Close Combat Weapon",
+              "Stats": [
+                {
+                  "Id": "RANGE",
+                  "Value": "Melee"
+                },
+                {
+                  "Id": "A",
+                  "Value": "1"
+                },
+                {
+                  "Id": "WS",
+                  "Value": "5+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "3"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ArmyRules":[
+    {
+      "Title": "For The Greater Good",
+      "Text": "If your Army Faction is T'AU EMPIRE, at the start of your Shooting phase you can select units from your army with this ability to become Observer units. During your Shooting phase, for each Observer unit from your army that has not been selected to shoot this phase and is eligible to shoot (excluding FORTIFICATION and Battle-shocked units) select one enemy unit that is visible to be marked as their Spotted unit until the end of the phase. Each enemy unit can only be marked as a Spotted unit once per phase. Units from your army with the For the Greater Good ability (excluding Observer units) are Guided units while targeting one or more Spotted units.Until the end of the phase, each time a model from your army in a Guided unit makes an attack that targets a Spotted unit, improve the Ballistic Skill characteristic of that attack by 1 and, if the Spotted unit was marked by an Observer unit that has the MARKERLIGHT keyword, that attack has the [IGNORES COVER] ability."
+    }
+  ]
+}

@@ -2,8 +2,8 @@ using WarOrgan.Data.BuildDataset.Utils;
 using WarOrgan.Data.BuildDataset.Validation;
 using WarOrgan.Model.DataSet;
 
-var defaultDatasetId = "Fracture";
-var defaultVersion = new Version(1, 1, 0, 0);
+var defaultDatasetId = "Warhammer40k11e";
+var defaultVersion = new Version(1, 0, 0, 5);
 var defaultBuildDirectory = AppContext.BaseDirectory;
 
 var datasetInfo = new DataSetInfo(
@@ -13,7 +13,7 @@ var datasetInfo = new DataSetInfo(
     PublishDate: DateTime.UtcNow);
 
 // Setup paths
-var assetsFolder = Path.Combine(AppContext.BaseDirectory, "Assets", "Fracture").EnsureDirectoryExists();
+var assetsFolder = Path.Combine(AppContext.BaseDirectory, "Assets", defaultDatasetId).EnsureDirectoryExists();
 var outputFolder = Path.Combine(AppContext.BaseDirectory, "Output").EnsureDirectoryExists();
 var rostersFolder = Path.Combine(assetsFolder, "Rosters").EnsureDirectoryExists();
 

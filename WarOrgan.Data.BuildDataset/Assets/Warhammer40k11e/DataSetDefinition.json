@@ -1,0 +1,90 @@
+{
+  "Features": "All",
+  "Factions": [
+    {
+      "Name": "Tau Empire",
+      "FactionKeyword": "T'AU EMPIRE",
+      "MainColor": "#286E7A",
+      "DarkColor": "#62B4C4"
+    }
+  ],
+  "BattleSizeDefinitions": [
+    {
+      "Name": "Incursion",
+      "PointsTotal": 1000,
+      "DetachmentPoints": 2,
+      "EnhancementLimit": 0,
+      "UnitLimit": 2
+    },
+    {
+      "Name": "Strike Force",
+      "PointsTotal": 2000,
+      "DetachmentPoints": 3,
+      "EnhancementLimit": 0,
+      "UnitLimit": 3
+    },
+    {
+      "Name": "Onslaught",
+      "PointsTotal": 3000,
+      "DetachmentPoints": 4,
+      "EnhancementLimit": 0,
+      "UnitLimit": 3
+    }
+  ],
+  "CoreAbilities":[
+    {
+      "Regex": "^Deep Strike$",
+      "Description": "Each time this unit makes an ingress move (20.04), if every model in this unit has this ability, it can be set up anywhere on the battlefield that is more than 8\" horizontally from all enemy units, even if that is within your opponent’s deployment zone."
+    },
+    {
+      "Regex": "^DEADLY DEMISE$",
+      "Description": "This ability always takes the form Deadly Demise X.\n\nEach time a model with this ability is destroyed, after the units embarked within it (if any) have made their emergency disembark moves, roll one D6. On a 6, that model suffers a deadly demise; each unit within 6\" of that model suffers a number of mortal wounds denoted by X (if this is a random number, roll separately for each unit within 6\")."
+    }
+  ],
+  "WeaponAbilities":[
+    {
+      "Regex": "^KEY$",
+      "Description": "Description"
+    },
+    {
+      "Regex": "^ANTI$",
+      "Description": "This ability always takes the form [ANTI-X Y+]. Each time an attack is made with an [ANTI] weapon, if the target unit has the keyword denoted by X, an unmodified wound roll of Y+ is a critical wound."
+    },
+    {
+      "Regex": "^ASSAULT$",
+      "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
+    },
+    {
+      "Regex": "^BLAST$",
+      "Description": "Each time you gather attack dice for a [BLAST] weapon, add one additional attack dice for every five models that were in the target unit in the Select Targets step (rounding down). If this ability takes the form [BLAST X], each time you gather attack dice for such a weapon, add X additional attack dice for every five models that were in the target unit in the Select Targets step (rounding down) instead."
+    },
+    {
+      "Regex": "^CLEAVE$",
+      "Description": "This ability always takes the form [CLEAVE X]. Each time you gather attack dice for a [CLEAVE] weapon, if you only selected one target for all of that weapon's attacks, add X additional attack dice for every five models that were in the target unit in the Select Targets step (rounding down)."
+    },
+    {
+      "Regex": "^CLOSE-QUARTERS$",
+      "Description": "Units containing one or more models with a [CLOSE-QUARTERS] weapon can shoot using close-quarters shooting (10.06)."
+    },
+    {
+      "Regex": "^DEVASTATING WOUNDS$",
+      "Description": "Each time an attack made with a [DEVASTATING WOUNDS] weapon results in a critical wound, the attack sequence for that attack ends and the target unit suffers a number of mortal wounds equal to the D characteristic of that weapon. These are inflicted after resolving any normal damage inflicted by those attacks.\n\nMortal wounds inflicted by [DEVASTATING WOUNDS] weapons can damage a maximum of one model for each critical wound; any remaining mortal wounds inflicted by that attack are lost."
+    },
+    {
+      "Regex": "^EXTRA ATTACKS$",
+      "Description": "Each time a unit containing one or more models with an [EXTRA ATTACKS] weapon fights, those models will make attacks with those weapons in addition to any others. In the Select Weapons step (04.01), for each of those models, you must select:\n\n• All of that model's [EXTRA ATTACKS] weapons.\n• One of that model's other melee weapons, if possible"
+    },
+    {
+      "Regex": "^PISTOL$",
+      "Description": "[PISTOL] and [CLOSE-QUARTERS] are identical for all rules purposes.\n\nUnits containing one or more models with a [CLOSE-QUARTERS] weapon can shoot using close-quarters shooting (10.06)."
+    },
+    {
+      "Regex": "^TWIN-LINKED$",
+      "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
+    },
+    {
+      "Regex": "^INDIRECT FIRE$",
+      "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
+    }
+  ]
+}
