@@ -4,8 +4,8 @@
     {
       "Name": "Tau Empire",
       "FactionKeyword": "T'AU EMPIRE",
-      "MainColor": "#286E7A",
-      "DarkColor": "#62B4C4"
+      "MainColor": "#175966",
+      "DarkColor": "#175966"
     }
   ],
   "BattleSizeDefinitions": [
