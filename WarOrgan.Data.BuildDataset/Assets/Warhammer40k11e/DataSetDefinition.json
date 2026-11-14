@@ -62,11 +62,7 @@
     },
     {
       "Regex": "^LEADER$",
-      "Description": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.\n\nUnless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it."
-    },
-    {
-      "Regex": "^SUPPORT$",
-      "Description": "Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.\n\nUnless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it."
+      "Description": "Before the battle, in the Muster Armies step, for each leader unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.\n\nUnless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it."
     },
     {
       "Regex": "^LONE OPERATIVE$",
@@ -75,6 +71,22 @@
     {
       "Regex": "^SCOUTS$",
       "Description": "This ability always takes the form Scouts X\". In the Resolve Pre-battle Abilities step, if every model in a unit has this ability, you can do one of the following:\n\n• If that unit is in strategic reserves, you can set up that unit anywhere that is wholly within your deployment zone.\n• If that unit is wholly within your deployment zone, it can make a scout move (see below).\n• If that unit is embarked within a DEDICATED TRANSPORT that is wholly within your deployment zone, and if every model embarked within that DEDICATED TRANSPORT has the Scouts ability, that DEDICATED TRANSPORT can make a scout move."
+    },
+    {
+      "Regex": "^STEALTH$",
+      "Description": "If every model in a unit has this ability, each time a ranged attack targets that unit, that unit has the benefit of cover against that attack (13.08)."
+    },
+    {
+      "Regex": "^SUPPORT$",
+      "Description": "Before the battle, in the Muster Armies step, for each support unit in your army, you must select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.\n\nUnless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it."
+    },
+    {
+      "Regex": "^SUPER-HEAVY WALKER$",
+      "Description": "Each time a unit with this ability makes a normal, advance or fall-back move:\n\n• Models in that unit can move through models (including MONSTER/VEHICLE models, but excluding TITANIC models) and can move horizontally through sections of terrain features that are 4\" or less in height. \n • Before moving that unit, you can select for all models in that unit to have the MOBILE keyword until that move ends. If you do, when that move ends, roll one D6: on a 1, that unit is battle-shocked."
+    },
+    {
+      "Regex": "^KEY$",
+      "Description": "DESCRIPTION"
     }
   ],
   "WeaponAbilities":[
@@ -116,7 +128,7 @@
     },
     {
       "Regex": "^HUNTER$",
-      "Description": "This ability always takes the form [HUNTER-X]. Weapons with this keyword"
+      "Description": "This ability always takes the form [HUNTER-X]. Weapons with this keyword can only target units that have the keyword denoted by X."
     },
     {
       "Regex": "^IGNORES COVER$",
@@ -159,12 +171,16 @@
       "Description": "This ability always takes the form [RAPID FIRE X]. Each time you gather attack dice for a [RAPID FIRE] weapon, add X additional attack dice if the target unit was within half range of that weapon in the Select Targets step."
     },
     {
-      "Regex": "^TWIN-LINKED$",
-      "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
+      "Regex": "^SUSTAINED HITS$",
+      "Description": "This ability always takes the form [SUSTAINED HITS X]. Each time an attack made with a [SUSTAINED HITS] weapon results in a critical hit, that attack results in a number of additional hits on the target as denoted by X."
     },
     {
-      "Regex": "^KEY$",
-      "Description": "DESCRIPTION"
+      "Regex": "^TORRENT$",
+      "Description": "Each time an attack is made with a [TORRENT] weapon, that attack automatically hits the target."
+    },
+    {
+      "Regex": "^TWIN-LINKED$",
+      "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
     }
   ]
 }
