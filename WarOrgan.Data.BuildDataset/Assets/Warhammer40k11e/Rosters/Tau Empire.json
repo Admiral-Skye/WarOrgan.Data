@@ -2,6 +2,277 @@
   "Name": "Tau Empire",
   "Units": [
     {
+      "Id": "COMMANDER SHADOWSUN",
+      "DisplayName": "Commander Shadowsun",
+      "FactionKeywords": [
+        "T'AU EMPIRE"
+      ],
+      "Flags": 6,
+      "UnitComposition": {
+        "ModelCompositions": [
+          {
+            "ModelName": "Commander Shadowsun",
+            "Limit": {
+              "Min": 1,
+              "Max": 1
+            },
+            "StatlineRef": "Commander Shadowsun",
+            "Wargear": [
+              {
+                "Models": 1,
+                "InitialWargear": [
+                  "Flechette launcher",
+                  "High-energy fusion blaster",
+                  "High-energy fusion blaster",
+                  "Light missile pod",
+                  "Pulse pistol",
+                  "Battlesuit fists"
+                ],
+                "Options": []
+              }
+            ]
+          }
+        ],
+        "WargearDefinitions": []
+      },
+      "Points": [
+        {
+          "ModelCount": 1,
+          "Cost": 100
+        }
+      ],
+      "CoreAbilities": [],
+      "Keywords": [
+        "INFANTRY",
+        "FLY",
+        "CHARACTER",
+        "EPIC HERO",
+        "BATTLESUIT",
+        "COMMANDER SHADOWSUN"
+      ],
+      "UnitAbilities": [
+        {
+          "Title": "Agile Combatant",
+          "Text": "This model is eligible to shoot in a turn in which it Fell Back."
+        },
+        {
+          "Title": "Hero of the Empire (Aura)",
+          "Text": "While a friendly T'AU EMPIRE unit is within 6\" of this model, each time a model in that unit makes a ranged attack, re-roll a Hit roll of 1."
+        },
+        {
+          "Title": "Advanced Guardian Drone",
+          "Text": "Each time a ranged attack targets the bearer, subtract 1 from the Wound roll."
+        },
+        {
+          "Title": "Command-link Drone (Aura)",
+          "Text": "The bearer's unit has the MARKERLIGHT keyword and can act as an Observer unit for another unit even if it Advanced this turn."
+        }
+      ],
+      "Infos" : [
+        {
+          "Title": "SUPREME COMMANDER",
+          "Text":"If this model is in your army, it must be your warlord."
+        }
+      ],
+      "StatLines": [
+        {
+          "StatName": "Commander Shadowsun",
+          "Stats": [
+            {
+              "Id": "M",
+              "Value": "10\""
+            },
+            {
+              "Id": "T",
+              "Value": "4"
+            },
+            {
+              "Id": "Sv",
+              "Value": "3+"
+            },
+            {
+              "Id": "Insv",
+              "Value": "5+",
+              "Description": "Invulnerable Save"
+            },
+            {
+              "Id": "W",
+              "Value": "6"
+            },
+            {
+              "Id": "LD",
+              "Value": "6+"
+            },
+            {
+              "Id": "OC",
+              "Value": "1"
+            }
+          ]
+        }
+      ],
+      "Weapons": [
+        {
+          "Id": "Ranged Weapons",
+          "Weapons": [
+            {
+              "Id": "Flechette launcher",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "18\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "5"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "2+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "3"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": ""
+            },
+            {
+              "Id": "High-energy fusion blaster",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "18\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "1"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "2+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "10"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "-4"
+                },
+                {
+                  "Id": "D",
+                  "Value": "D6"
+                }
+              ],
+              "Keywords": "MELTA 2"
+            },
+            {
+              "Id": "Light missile pod",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "24\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "2"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "2+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "7"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "2"
+                }
+              ],
+              "Keywords": ""
+            },
+            {
+              "Id": "Pulse pistol",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "12\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "1"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "3+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "PISTOL"
+            }
+          ]
+        },
+        {
+          "Id": "Melee Weapons",
+          "Weapons": [
+            {
+              "Id": "Battlesuit fists",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "Melee"
+                },
+                {
+                  "Id": "A",
+                  "Value": "3"
+                },
+                {
+                  "Id": "WS",
+                  "Value": "4+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "Id": "BREACHER TEAM",
       "DisplayName": "Breacher Team",
       "FactionKeywords": [
@@ -9,7 +280,6 @@
       ],
       "UnitComposition": {
         "ModelCompositions": [
-
           {
             "ModelName": "Breacher Fire Warrior Shas'ui",
             "Limit": {
@@ -21,10 +291,10 @@
               {
                 "Models": 1,
                 "InitialWargear": [
-                  "Pulse Blaster",
+                  "Pulse blaster",
                   "Pulse pistol",
-                  "Close Combat Weapon",
-                  "DS8 Support Turret"
+                  "Close combat weapon",
+                  "DS8 support turret"
                 ],
                 "Options": [
                   {
@@ -32,22 +302,22 @@
                     "Options": [
                       {
                         "Items": [
-                          "Gun Drone"
+                          "Gun drone"
                         ]
                       },
                       {
                         "Items": [
-                          "Marker Drone"
+                          "Marker drone"
                         ]
                       },
                       {
                         "Items": [
-                          "Shield Drone"
+                          "Shield drone"
                         ]
                       },
                       {
                         "Items": [
-                          "Guardian Drone"
+                          "Guardian drone"
                         ]
                       }
                     ]
@@ -57,17 +327,17 @@
                     "Options": [
                       {
                         "Items": [
-                          "Gun Drone"
+                          "Gun drone"
                         ]
                       },
                       {
                         "Items": [
-                          "Marker Drone"
+                          "Marker drone"
                         ]
                       },
                       {
                         "Items": [
-                          "Shield Drone"
+                          "Shield drone"
                         ]
                       }
                     ]
@@ -87,45 +357,45 @@
               {
                 "Models": 9,
                 "InitialWargear": [
-                  "Pulse Blaster",
+                  "Pulse blaster",
                   "Pulse pistol",
-                  "Close Combat Weapon"
+                  "Close combat weapon"
                 ]
               }
             ]
           }
         ],
-        "WargearDefinitions":[
+        "WargearDefinitions": [
           {
-            "Key": "Gun Drone",
-            "DisplayName": "Gun Drone",
+            "Key": "Gun drone",
+            "DisplayName": "Gun drone",
             "Cost": 0,
             "GrantsWeapons": [
-              "Twin Pulse Carbine"
+              "Twin pulse carbine"
             ]
           },
           {
-            "Key": "Guardian Drone",
-            "DisplayName": "Guardian Drone",
+            "Key": "Guardian drone",
+            "DisplayName": "Guardian drone",
             "Cost": 0,
             "GrantsAbilities": [
-              "Guardian Drone"
+              "Guardian drone"
             ]
           },
           {
-            "Key": "Marker Drone",
-            "DisplayName": "Marker Drone",
+            "Key": "Marker drone",
+            "DisplayName": "Marker drone",
             "Cost": 0,
             "GrantsAbilities": [
-              "Marker Drone"
+              "Marker drone"
             ]
           },
           {
-            "Key": "Shield Drone",
-            "DisplayName": "Shield Drone",
+            "Key": "Shield drone",
+            "DisplayName": "Shield drone",
             "Cost": 0,
             "GrantsAbilities": [
-              "Shield Drone"
+              "Shield drone"
             ],
             "StatAdjustments": [
               {
@@ -159,19 +429,19 @@
           "Text": "Each time a model in this unit makes a ranged attack that targets an enemy unit within range of an objective marker, you can re-roll the Wound roll."
         },
         {
-          "Title": "DS8 Support Turret",
+          "Title": "DS8 support turret",
           "Text": "In your Movement phase, if this unit Remains Stationary, until the start of your next turn, its Shas'ui model is equipped with the support turret weapon."
         },
         {
-          "Title": "Guardian Drone",
+          "Title": "Guardian drone",
           "Text": "Each time a model makes a ranged attack that targets the bearer's unit, subtract 1 from the Wound roll."
         },
         {
-          "Title": "Marker Drone",
+          "Title": "Marker drone",
           "Text": "The bearer's unit has the MARKERLIGHT keyword and can act as an Observer unit for another unit even if it Advanced this turn."
         },
         {
-          "Title": "Shield Drone",
+          "Title": "Shield drone",
           "Text": "Add 1 to the bearer's WOUNDS characteristic."
         }
       ],
@@ -208,14 +478,14 @@
       ],
       "Weapons": [
         {
-          "Id": "Ranged",
+          "Id": "Ranged Weapons",
           "Weapons": [
             {
-              "Id": "Pulse Blaster",
+              "Id": "Pulse blaster",
               "Stats": [
                 {
-                  "Id": "RANGE",
-                  "Value": "10"
+                  "Id": "RNG",
+                  "Value": "10\""
                 },
                 {
                   "Id": "A",
@@ -238,14 +508,14 @@
                   "Value": "1"
                 }
               ],
-              "Keywords":"ASSAULT, EXTRA ATTACKS"
+              "Keywords": "ASSAULT"
             },
             {
               "Id": "Pulse pistol",
               "Stats": [
                 {
-                  "Id": "RANGE",
-                  "Value": "12"
+                  "Id": "RNG",
+                  "Value": "12\""
                 },
                 {
                   "Id": "A",
@@ -268,14 +538,14 @@
                   "Value": "1"
                 }
               ],
-              "Keywords":"PISTOL"
+              "Keywords": "PISTOL"
             },
             {
-              "Id": "DS8 Support Turret",
+              "Id": "DS8 support turret",
               "Stats": [
                 {
-                  "Id": "RANGE",
-                  "Value": "30"
+                  "Id": "RNG",
+                  "Value": "30\""
                 },
                 {
                   "Id": "A",
@@ -298,15 +568,15 @@
                   "Value": "1"
                 }
               ],
-              "Keywords":"INDIRECT FIRE, TWIN-LINKED"
+              "Keywords": "INDIRECT FIRE, TWIN-LINKED"
             },
             {
-              "Id": "Twin Pulse Carbine",
-              "DisplayName": "Twin Pulse Carbine",
+              "Id": "Twin pulse carbine",
+              "DisplayName": "Twin pulse carbine",
               "Stats": [
                 {
-                  "Id": "RANGE",
-                  "Value": "20"
+                  "Id": "RNG",
+                  "Value": "20\""
                 },
                 {
                   "Id": "A",
@@ -329,18 +599,18 @@
                   "Value": "1"
                 }
               ],
-              "Keywords":"ASSAULT, TWIN-LINKED"
+              "Keywords": "ASSAULT, TWIN-LINKED"
             }
           ]
         },
         {
-          "Id": "Melee",
+          "Id": "Melee Weapons",
           "Weapons": [
             {
-              "Id": "Close Combat Weapon",
+              "Id": "Close combat weapon",
               "Stats": [
                 {
-                  "Id": "RANGE",
+                  "Id": "RNG",
                   "Value": "Melee"
                 },
                 {
@@ -368,9 +638,327 @@
           ]
         }
       ]
+    },
+    {
+      "Id": "DEVILFISH",
+      "DisplayName": "Devilfish",
+      "FactionKeywords": [
+        "T'AU EMPIRE"
+      ],
+      "UnitComposition": {
+        "ModelCompositions": [
+          {
+            "ModelName": "Devilfish",
+            "Limit": {
+              "Min": 1,
+              "Max": 1
+            },
+            "StatlineRef": "Devilfish",
+            "Wargear": [
+              {
+                "Models": 1,
+                "InitialWargear": [
+                  "Accelerator burst cannon",
+                  "2 Twin pulse carbines",
+                  "Armored hull"
+                ],
+                "Options": [
+                  {
+                    "Max": 1,
+                    "Replaces": [
+                      "2 Twin pulse carbines"
+                    ],
+                    "Options": [
+                      {
+                        "Items": [
+                          "2 Smart missile systems"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Max": 1,
+                    "Options": [
+                      {
+                        "Items": [
+                          "Seeker missile"
+                        ]
+                      },
+                      {
+                        "Items": [
+                          "2 Seeker missiles"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "WargearDefinitions": [
+          {
+            "Key": "2 Twin pulse carbines",
+            "Cost": 0,
+            "GrantsWeapons": [
+              "Twin pulse carbine",
+              "Twin pulse carbine"
+            ]
+          },
+          {
+            "Key": "2 Smart missile systems",
+            "Cost": 0,
+            "GrantsWeapons": [
+              "Smart missile system",
+              "Smart missile system"
+            ]
+          },
+          {
+            "Key": "Seeker missile",
+            "Cost": 0,
+            "GrantsWeapons": [
+              "Seeker missile"
+            ]
+          },
+          {
+            "Key": "2 Seeker missiles",
+            "Cost": 0,
+            "GrantsWeapons": [
+              "Seeker missile",
+              "Seeker missile"
+            ]
+          }
+        ]
+      },
+      "Points": [
+        {
+          "UnitCount": 3,
+          "ModelCount": 1,
+          "Cost": 75
+        },
+        {
+          "UnitCount": 6,
+          "ModelCount": 1,
+          "Cost": 85
+        }
+      ],
+      "CoreAbilities": [],
+      "Keywords": [
+        "VEHICLE",
+        "FLY",
+        "FRAME",
+        "TRANSPORT",
+        "DEDICATED TRANSPORT",
+        "DEVILFISH"
+      ],
+      "UnitAbilities": [
+        {
+          "Title": "Rapid Deployment",
+          "Text": "Units can disembark from this TRANSPORT after it has Advanced. Units that do so make a shock disembark move (Core Rules, 18.07) for that disembarkation."
+        }
+      ],
+      "Infos":[
+        {
+          "Title": "TRANSPORT",
+          "Text": "This model has a transport capacity of 12 T'AU EMPIRE INFANTRY models. It cannot transport BATTLESUIT, KROOT or VESPID STINGWINGS models."
+        }
+    ],
+      "StatLines": [
+        {
+          "StatName": "Devilfish",
+          "Stats": [
+            {
+              "Id": "M",
+              "Value": "12"
+            },
+            {
+              "Id": "T",
+              "Value": "9"
+            },
+            {
+              "Id": "Sv",
+              "Value": "3+"
+            },
+            {
+              "Id": "W",
+              "Value": "13"
+            },
+            {
+              "Id": "LD",
+              "Value": "7+"
+            },
+            {
+              "Id": "OC",
+              "Value": "2"
+            }
+          ]
+        }
+      ],
+      "Weapons": [
+        {
+          "Id": "Ranged Weapons",
+          "Weapons": [
+            {
+              "Id": "Accelerator burst cannon",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "18\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "4"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "4+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "6"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "-1"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": ""
+            },
+            {
+              "Id": "Twin pulse carbine",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "20\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "2"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "4+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "ASSAULT, TWIN-LINKED"
+            },
+            {
+              "Id": "Seeker missile",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "48\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "1"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "4+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "14"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "-3"
+                },
+                {
+                  "Id": "D",
+                  "Value": "D6+1"
+                }
+              ],
+              "Keywords": "ONE SHOT"
+            },
+            {
+              "Id": "Smart missile system",
+              "DisplayName": "Smart missile system",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "30\""
+                },
+                {
+                  "Id": "A",
+                  "Value": "3"
+                },
+                {
+                  "Id": "BS",
+                  "Value": "4+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "5"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ],
+              "Keywords": "INDIRECT FIRE"
+            }
+          ]
+        },
+        {
+          "Id": "Melee Weapons",
+          "Weapons": [
+            {
+              "Id": "Armored hull",
+              "Stats": [
+                {
+                  "Id": "RNG",
+                  "Value": "Melee"
+                },
+                {
+                  "Id": "A",
+                  "Value": "3"
+                },
+                {
+                  "Id": "WS",
+                  "Value": "5+"
+                },
+                {
+                  "Id": "S",
+                  "Value": "6"
+                },
+                {
+                  "Id": "AP",
+                  "Value": "0"
+                },
+                {
+                  "Id": "D",
+                  "Value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "ArmyRules":[
+  "ArmyRules": [
     {
       "Title": "For The Greater Good",
       "Text": "If your Army Faction is T'AU EMPIRE, at the start of your Shooting phase you can select units from your army with this ability to become Observer units. During your Shooting phase, for each Observer unit from your army that has not been selected to shoot this phase and is eligible to shoot (excluding FORTIFICATION and Battle-shocked units) select one enemy unit that is visible to be marked as their Spotted unit until the end of the phase. Each enemy unit can only be marked as a Spotted unit once per phase. Units from your army with the For the Greater Good ability (excluding Observer units) are Guided units while targeting one or more Spotted units.Until the end of the phase, each time a model from your army in a Guided unit makes an attack that targets a Spotted unit, improve the Ballistic Skill characteristic of that attack by 1 and, if the Spotted unit was marked by an Observer unit that has the MARKERLIGHT keyword, that attack has the [IGNORES COVER] ability."
