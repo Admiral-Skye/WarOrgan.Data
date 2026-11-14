@@ -182,5 +182,27 @@
       "Regex": "^TWIN-LINKED$",
       "Description": "Units containing one or more models with an [ASSAULT] weapon can shoot using assault shooting (10.05)"
     }
+  ],
+  "CategoryKeywords": [
+    {
+      "Keyword": "EPIC HERO",
+      "CategoryDisplayName": "Epic Hero"
+    },
+    {
+      "Keyword": "CHARACTER",
+      "CategoryDisplayName": "Character"
+    },
+    {
+      "Keyword": "BATTLELINE",
+      "CategoryDisplayName": "Battleline"
+    },
+    {
+      "Keyword": "INFANTRY",
+      "CategoryDisplayName": "Infantry"
+    },
+    {
+      "Keyword": "VEHICLE",
+      "CategoryDisplayName": "Vehicle"
+    }
   ]
 }
