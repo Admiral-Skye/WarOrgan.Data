@@ -1,8 +1,8 @@
-using WarOrgan.Data.BuildDataset.Utils;
+using WarOrgan.Data.Common.Utils;
 using WarOrgan.Model.DataSet;
 using WarOrgan.Model.Unit;
 
-namespace WarOrgan.Data.BuildDataset.Validation;
+namespace WarOrgan.Data.Common.Validation;
 
 public static class KeywordValidation
 {

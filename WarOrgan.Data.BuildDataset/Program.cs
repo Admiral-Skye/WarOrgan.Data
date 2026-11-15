@@ -1,5 +1,5 @@
-using WarOrgan.Data.BuildDataset.Utils;
-using WarOrgan.Data.BuildDataset.Validation;
+using WarOrgan.Data.Common.Utils;
+using WarOrgan.Data.Common.Validation;
 using WarOrgan.Model.DataSet;
 
 var defaultDatasetId = "Warhammer40k11e";

@@ -1,9 +1,9 @@
-using WarOrgan.Data.BuildDataset.Utils;
+using WarOrgan.Data.Common.Utils;
 using WarOrgan.Model.DataSet;
 using WarOrgan.Model.Faction;
 using WarOrgan.Model.Unit;
 
-namespace WarOrgan.Data.BuildDataset.Validation;
+namespace WarOrgan.Data.Common.Validation;
 
 // Copied/adapted from DataParser's roster validation, without game-specific rules.
 public static class Validation

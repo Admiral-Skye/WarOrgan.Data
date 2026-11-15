@@ -1,10 +1,10 @@
-using WarOrgan.Data.BuildDataset.Utils;
+using WarOrgan.Data.Common.Utils;
 using WarOrgan.Model.Effects;
 using WarOrgan.Model.Faction;
 using WarOrgan.Model.Unit;
 using WarOrgan.Model.Unit.Wargear;
 
-namespace WarOrgan.Data.BuildDataset.Validation;
+namespace WarOrgan.Data.Common.Validation;
 
 public static class WarGearValidation
 {

@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using WarOrgan.Model.DataSet;
 
-namespace WarOrgan.Data.BuildDataset.Utils;
+namespace WarOrgan.Data.Common.Utils;
 
 public static class IoUtils
 {

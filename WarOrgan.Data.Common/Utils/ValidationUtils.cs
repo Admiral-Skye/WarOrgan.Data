@@ -1,7 +1,7 @@
 ﻿using WarOrgan.Model.DataSet;
 using WarOrgan.Model.Unit.Wargear;
 
-namespace WarOrgan.Data.BuildDataset.Utils;
+namespace WarOrgan.Data.Common.Utils;
 
 public static class ValidationUtils
 {

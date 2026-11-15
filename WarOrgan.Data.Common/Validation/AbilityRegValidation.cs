@@ -1,10 +1,10 @@
 using System.Text.RegularExpressions;
-using WarOrgan.Data.BuildDataset.Utils;
+using WarOrgan.Data.Common.Utils;
 using WarOrgan.Model.DataSet;
 using WarOrgan.Model.Effects;
 using WarOrgan.Model.Faction;
 
-namespace WarOrgan.Data.BuildDataset.Validation;
+namespace WarOrgan.Data.Common.Validation;
 
 public static class AbilityRegValidation
 {

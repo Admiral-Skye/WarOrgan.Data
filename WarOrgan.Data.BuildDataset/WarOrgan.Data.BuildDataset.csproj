@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../WarOrgan.Data.Common/WarOrgan.Data.Common.csproj" />
     <ProjectReference Include="..\WarOrgan.Data.Model\WarOrgan.Data.Model.csproj" />
     <None Update="Assets\**\*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>

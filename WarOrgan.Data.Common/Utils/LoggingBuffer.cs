@@ -1,4 +1,4 @@
-namespace WarOrgan.Data.BuildDataset.Utils;
+namespace WarOrgan.Data.Common.Utils;
 
 public static class LoggingBuffer
 {
