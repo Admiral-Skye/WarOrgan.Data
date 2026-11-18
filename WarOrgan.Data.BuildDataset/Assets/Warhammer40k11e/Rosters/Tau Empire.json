@@ -16,7 +16,6 @@
               "Min": 1,
               "Max": 1
             },
-            "StatlineRef": "Commander Shadowsun",
             "Wargear": [
               {
                 "Models": 1,
@@ -76,7 +75,6 @@
       ],
       "StatLines": [
         {
-          "StatName": "Commander Shadowsun",
           "Stats": [
             {
               "Id": "M",
@@ -286,7 +284,6 @@
               "Min": 1,
               "Max": 1
             },
-            "StatlineRef": "Breacher",
             "Wargear": [
               {
                 "Models": 1,
@@ -352,7 +349,6 @@
               "Min": 9,
               "Max": 9
             },
-            "StatlineRef": "Breacher",
             "Wargear": [
               {
                 "Models": 9,
@@ -447,7 +443,6 @@
       ],
       "StatLines": [
         {
-          "StatName": "Breacher",
           "Stats": [
             {
               "Id": "M",
@@ -653,7 +648,6 @@
               "Min": 1,
               "Max": 1
             },
-            "StatlineRef": "Devilfish",
             "Wargear": [
               {
                 "Models": 1,
@@ -765,7 +759,6 @@
     ],
       "StatLines": [
         {
-          "StatName": "Devilfish",
           "Stats": [
             {
               "Id": "M",
